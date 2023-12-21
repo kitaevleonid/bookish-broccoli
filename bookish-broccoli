@@ -1,0 +1,8 @@
+        let elementsTransformer = ElementsTransformer()
+        
+        let collageReducer = CollageReducer(shapeReducer: shapeReducer,
+                                            textReducer: textReducer,
+                                            stickerReducer: stickerReducer)
+        case .setCollage(let collage):
+            newState.collage = collage
+            
